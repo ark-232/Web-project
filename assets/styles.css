@@ -1,0 +1,436 @@
+@import url('https://fonts.adobe.com/fonts/adobe-garamond');
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "adobe-garamond";
+}
+
+body{
+    color: white;
+}
+
+#logo{
+    font-family:"adobe-garamond";
+    background-color: #E0B973;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: auto;
+    text-align: center;
+    color: #14274A;
+    position: absolute;
+    top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 5%;
+}
+
+.navbar{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+#main{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#main:hover{
+    text-decoration: underline;
+}
+
+#OpenSky{
+    font-weight: bold;
+    font-size: 500%;
+    margin-bottom: 0%;
+}
+
+.text{
+    position: absolute;
+    width: auto;
+    top: 25%;
+    left: 10%;
+}
+
+#text_header{
+    position: absolute;
+    text-align: center;
+}
+
+.big_text{
+    font-size: 200%;
+    margin-bottom: 0%;
+}
+
+#letter_spacing{
+    letter-spacing: 0.4em;
+    font-family:"adobe-garamond";
+}
+
+#summary{
+    width: 55%;
+    margin-bottom: 0%;
+}
+
+.nav-link{
+    color: white!important;
+}
+
+.nav-link:hover{
+    color: rgb(230, 230, 230);
+}
+
+.orange_container{
+    background-color: #E0B973;
+    border-radius: 5px;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#explore_orange{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #E0B973;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+}
+
+.here_for_you{
+    color: black;
+    padding: 5%;
+}
+
+.outline_text{
+    border: black solid;
+}
+
+.cart{
+    margin: 5%;
+    border-radius: 20px;
+    padding: 1%;
+    color: black;
+    position: relative;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 1%;
+}
+
+.cart_booking{
+    width: 70%;
+    border-radius: 20px;
+}
+
+.img_right{
+    text-align: right; 
+}
+
+#exlpore_link{
+    text-decoration: none!important;
+}
+
+.orange_circle{
+    width: 40px;
+    height: 40px;
+}
+
+.orange_circle_container{
+    padding: 5%;
+}
+
+.outline{
+    border: black solid;
+    width: 80%;
+    position: relative;
+}
+
+#price{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.blue{
+    background-color: #14274A;
+}
+
+.white{
+    color: #ffffff;
+}
+
+
+#book_now{
+    flex-grow: 1;
+    position: absolute;
+    justify-content: center;
+    bottom: 20%;
+    text-decoration: none;
+}
+
+#explore{
+    width: 33%;
+    text-shadow: 1px 1px black;
+}
+
+#hotel{
+    /*
+     U. (2014, April 10). Gabriel Ghnassia (@gabrielghnassia) | Unsplash Photo Community. Unsplash. https://unsplash.com/@gabrielghnassia
+    */
+    background-image: url("./images/hotel.jpg");
+    opacity: 50%;
+  }
+
+#facilities{
+    /*
+    Attention Required! | Cloudflare. (2016, September 30). Scribber. https://www.pexels.com/photo/palm-trees-at-night-258154/
+    */
+    background-image: url("./images/palm_trees.jpg");
+    opacity: 50%;
+}
+
+#booking{
+    /*
+    Attention Required! | Cloudflare. (2014, March 30). Pexels. https://www.pexels.com/photo/black-laptop-placed-on-table-271618/
+    */
+    background-image: url("./images/booking.jpeg");
+    opacity: 50%;
+}
+
+.facilities_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.all_facilities:hover{
+    box-shadow: 0px 0px 1px 8px rgb(219, 250, 255);
+    transition: 0.5s ease-in-out;
+}
+
+.all_facilities{
+    width: 80%;
+}
+
+#contact{
+    background-color: #14274A;
+    height: 40vh;
+}
+
+.white_box{
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    font-weight: bold;
+}
+
+#blue_tint{
+    background-color: #14274A;
+    flex-grow: 1;
+}
+
+
+.bg_header{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+  }
+
+#scroll{
+    position: absolute;
+    text-align: center;
+    bottom: 3%;
+    font-weight: bold;
+}
+
+#down{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+#down:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.container_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    color: black;
+    padding: 5%;
+    text-align: center;
+}
+
+.container{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luxury{
+    color: black;
+    width: 50%;
+    padding-top: 5%;
+    flex-grow: 1;
+}
+
+.black{
+    color: black;
+}
+
+.bed{
+    width: 50%;
+    height: auto;
+}
+
+.luxury_text{
+    border-left: black solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bold{
+    font-family: "adobe-garamond";
+    font-weight: bold;
+}
+
+footer{
+    background-color: #14274A;
+    display: flex;
+    align-items: center;
+}
+
+.blue_box{
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 40px solid #14274A;
+}
+
+.email{
+    border: #E0B973 solid;
+    padding: 0.5em;
+    width: 80%;
+}
+
+.ok{
+    width: 20%;
+    color: #14274A;
+    background-color: #E0B973;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0.5em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#info{
+    flex-direction: column;
+    
+}
+
+.addtocart{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #14274A;
+    height: 50px;
+    width: 200px;
+
+}
+
+.addtocart:hover{
+    background-color: #E0B973;
+}
+
+@media (max-width: 576px){
+
+    .white_box{
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    #OpenSky{
+        font-size: 400%;
+    }
+
+    .navbar{
+        text-align: right;
+        z-index: 1;
+    }
+
+    .luxury{
+        text-shadow: 1px 1px rgb(255, 255, 255);
+    }
+
+    .bed{
+        width: 60%;
+        height: 200px;
+        border-radius: 20px;
+        margin-left: -60%;
+        opacity: 30%;
+        transition: ease-in-out;
+        transition: 1s;
+    }
+
+    .bed:hover{
+        opacity: 100%;
+    }
+
+    footer{
+        font-size: 60%;
+    }
+
+    #lux{
+        font-size: 100%;
+    }
+
+    .cart{
+        flex-direction: column-reverse;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        text-align: center;
+    }
+
+    .img_right{
+        text-align: center;
+    }
+
+    .bottom{
+        position: relative;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .bg-dark{
+        background-color: transparent!important;
+    }
+
+}
