@@ -1,5 +1,14 @@
-<?php 
-    require './assets/includes/configuration.inc.php'; 
+<?php
+require './assets/includes/configuration.inc.php';
+session_start();
+?>
+<?php
+if (isset($_GET["id"])) {
+  $i = $_GET["id"];
+  $name = $_GET["name"];
+  $_SESSION["cart"][$i] = $i;
+  $_SESSION["name"][$i] = $name;
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -63,23 +72,7 @@
 
     <div id="sneak_peak">
       <h4 class="bold col-12 pb-4">ROOMS AND RATES</h4>
-
-      <div class="row d-flex mx-0 mb-5 align-items-center">
-
-        <div class="black col-6">
-          <p class="text-center mb-0"><b>Selected Location:</b></p>
-          <p class="text-center">Hotel 100, New York, USA</p>
-        </div>
-
-
-        <div class="col-6 text-center">
-          <a class="px-0" href="#">Change location</a>
-        </div>
-      </div>
-
     </div>
-
-
 
     <div class="container">
       <div class="outline">
@@ -108,7 +101,7 @@
         </div>
 
         <div class="orange_circle_container d-flex align-items-center">
-          <button type="button" class="btn btn-primary text-center addtocart">Add to Cart</button>
+          <a href='./booking.php?id=1&name=single' class="btn btn-primary text-center addtocart">Add to Cart</a>
         </div>
       </div>
     </div>
@@ -140,7 +133,7 @@
         </div>
 
         <div class="orange_circle_container d-flex align-items-center">
-          <button type="button" class="btn btn-primary text-center addtocart">Add to Cart</button>
+          <a href='./booking.php?id=2&name=double' class="btn btn-primary text-center addtocart">Add to Cart</a>
 
         </div>
       </div>
@@ -173,7 +166,7 @@
         </div>
 
         <div class="orange_circle_container d-flex align-items-center">
-          <button type="button" class="btn btn-primary text-center addtocart">Add to Cart</button>
+        <a href='./booking.php?id=3&name=twin' class="btn btn-primary text-center addtocart">Add to Cart</a>
 
         </div>
       </div>

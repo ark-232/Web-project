@@ -12,6 +12,11 @@ body{
     color: white;
 }
 
+.default{
+    color: grey;
+    margin: 100px;
+}
+
 #logo{
     font-family:"adobe-garamond";
     background-color: #E0B973;
@@ -179,7 +184,7 @@ body{
 
 #explore{
     width: 33%;
-    text-shadow: 1px 1px black;
+    /* text-shadow: 1px 1px black; */
 }
 
 #hotel{
@@ -320,6 +325,10 @@ footer{
     background-color: #14274A;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 .blue_box{
@@ -356,14 +365,20 @@ footer{
     margin-left: auto;
     margin-right: auto;
     background-color: #14274A;
-    height: 50px;
     width: 200px;
-
+    padding: 10px 20px;
 }
 
 .addtocart:hover{
     background-color: #E0B973;
 }
+
+.contact-form{
+    width: 30%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 
 @media (max-width: 576px){
 
@@ -374,6 +389,10 @@ footer{
 }
 
 @media (max-width: 768px){
+    .container{
+        
+justify-content: left;
+    }
 
     #OpenSky{
         font-size: 400%;
@@ -382,14 +401,18 @@ footer{
     .navbar{
         text-align: right;
         z-index: 1;
+        border-radius: 10px;
+        background-color: transparent !important;
     }
 
     .luxury{
         text-shadow: 1px 1px rgb(255, 255, 255);
+        width: 100%;
+        flex-grow: 0;
     }
 
     .bed{
-        width: 60%;
+        width: 0;
         height: 200px;
         border-radius: 20px;
         margin-left: -60%;
@@ -403,7 +426,7 @@ footer{
     }
 
     footer{
-        font-size: 60%;
+        font-size: 1em;
     }
 
     #lux{
