@@ -22,11 +22,11 @@ function validateContact() {
         errorContainer.innerHTML += getError("Name cannot be longer than 50 characters");
         return false;
     }
-    if (nameValue.trim().length > 100) {
+    if (emailValue.trim().length > 100) {
         errorContainer.innerHTML += getError("Email cannot be longer than 100 characters");
         return false;
     }
-    if (nameValue.trim().length > 200) {
+    if (messageValue.trim().length > 200) {
         errorContainer.innerHTML += getError("Message cannot be longer than 200 characters");
         return false;
     }
