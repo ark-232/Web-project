@@ -84,6 +84,8 @@ if (isset($_POST['remove'])) {
         } else {
           echo "<h3 class='default text-center'>Nothing in cart. Please go to Bookings and choose a room.</h3>";
         }
+      } else {
+        echo "<h3 class='default text-center'>Nothing in cart. Please go to Bookings and choose a room.</h3>";
       }
 
 

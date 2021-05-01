@@ -20,22 +20,7 @@ require "./assets/includes/db-configuration.inc.php";
     <?php
     $mysqli = retrieveDatabaseConnection();
 
-    $sql = "SELECT * FROM WPEmails";
-    $result = $mysqli->query($sql);
-
-    $numberOfRows = $result->num_rows;
-
-    if ($numberOfRows > 0) {
-
-        while ($row = $result->fetch_assoc()) {
-            echo "
-        <div class='card bg-light w-50 mx-auto my-4 p-4'>
-        <h2>Data from Subscribe Form</h2>
-          <p>Email: {$row['email']}</p>
-        </div>
-        ";
-        }
-    }
+    
 
     $sql2 = "SELECT * FROM WPContact";
     $result2 = $mysqli->query($sql2);

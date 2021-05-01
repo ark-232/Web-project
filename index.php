@@ -65,7 +65,7 @@
         <h4>All our room types are including complementary breakfast</h4>
       </div>
 
-      <div class="container-main">
+      <div class="container">
         <div class="luxury">
           <div class="luxury_text">
             <h2 class="bold">Luxury redefined</h2>
