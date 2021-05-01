@@ -1,3 +1,7 @@
+<?php
+require "./assets/includes/configuration.inc.php";
+require "./assets/includes/db-configuration.inc.php";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -26,6 +30,7 @@
         while ($row = $result->fetch_assoc()) {
             echo "
         <div class='card bg-light w-50 mx-auto my-4 p-4'>
+        <h2>Data from Subscribe Form</h2>
           <p>Email: {$row['email']}</p>
         </div>
         ";
@@ -37,11 +42,12 @@
 
     $numberOfRows2 = $result2->num_rows;
 
-    if ($numberOfRow2 > 0) {
+    if ($numberOfRows2 > 0) {
 
         while ($row = $result2->fetch_assoc()) {
             echo "
         <div class='card bg-light w-50 mx-auto my-4 p-4'>
+        <h2>Data from contact Form</h2>
           <p>Email: {$row['email']}</p>
           <p>Name: {$row['name']}</p>
           <p>Message: {$row['message']}</p>

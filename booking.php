@@ -53,7 +53,7 @@ if (isset($_GET["id"])) {
       </p>
     </div>
 
-    <a id="book_now" href="./booking.html">
+    <a id="book_now" href="./booking.php">
       <div class="orange_container">
         <div class="button white-button large ">Book Now</div>
       </div>
@@ -77,14 +77,8 @@ if (isset($_GET["id"])) {
     <div class="container">
       <div class="outline">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div class="carousel">
+            <div class="it">
               <!-- A. (2020, March 26). devon-janse-van-rensburg-_WEDFTZV0qU-unsplash | NAP, Producent materacy. NAP, Producent materacy |. https://www.napkomfort.pl/ile-kalorii-mozesz-spalic-podczas-snu/devon-janse-van-rensburg-_wedftzv0qu-unsplash-2/ -->
               <img src="./assets/images/booked_bedroom.jpg" class="d-block w-100" alt="...">
             </div>
@@ -109,12 +103,6 @@ if (isset($_GET["id"])) {
     <div class="container">
       <div class="outline">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
           <div class="carousel-inner">
             <div class="carousel-item active">
               <!-- Champs, M. (2019, August 24). white bed comforter. Unsplash. https://unsplash.com/photos/Id2IIl1jOB0/info -->
@@ -142,11 +130,6 @@ if (isset($_GET["id"])) {
     <div class="container">
       <div class="outline">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
 
           <div class="carousel-inner">
             <div class="carousel-item active">

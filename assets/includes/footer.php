@@ -1,6 +1,6 @@
 <?php
 require "./assets/includes/configuration.inc.php";
-require "./assets/includes/db-configuration.inc.php";
+
 ?>
 
 <?php

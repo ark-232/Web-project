@@ -1,4 +1,5 @@
 <?php
+require "./assets/includes/db-configuration.inc.php";
 $pages = array(
   "./index.php" => "Home",
   "./facilities.php" => "Facilities",

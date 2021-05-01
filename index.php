@@ -42,7 +42,7 @@
         </p>
       </div>
 
-      <a id="book_now" href="./booking.html">
+      <a id="book_now" href="./booking.php">
         <div class="orange_container">
           <div class="button white-button large">Book Now</div>
         </div>
@@ -65,7 +65,7 @@
         <h4>All our room types are including complementary breakfast</h4>
       </div>
 
-      <div class="container">
+      <div class="container-main">
         <div class="luxury">
           <div class="luxury_text">
             <h2 class="bold">Luxury redefined</h2>

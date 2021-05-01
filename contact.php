@@ -1,32 +1,8 @@
 <?php
 require "./assets/includes/configuration.inc.php";
-require "./assets/includes/db-configuration.inc.php";
 ?>
 
-<?php
-if (isset($_POST["email"])) {
-  echo "<br>";
-  $email = strip_tags($_POST["email"]);
-  $name = strip_tags($_POST["name"]);
-  $message = strip_tags($_POST["message"]);
 
-  $email = filter_var($email, FILTER_SANITIZE_STRING);
-  $name = filter_var($name, FILTER_SANITIZE_STRING);
-  $message = filter_var($message, FILTER_SANITIZE_STRING);
-  $date = filter_var(date("Y/m/d"), FILTER_SANITIZE_STRING);
-
-  $mysqli = retrieveDatabaseConnection();
-
-  $sql = "INSERT INTO WPContact (email, name, message, date) VALUES (?,?,?,?)";
-  $stmt = $mysqli->prepare($sql);
-  $stmt->bind_param("ssss", $email, $name, $message, $date);
-
-  $success = $stmt->execute();
-
-  $mysqli->close();
-}
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -61,7 +37,30 @@ if (isset($_POST["email"])) {
 
 
     <?php require './assets/includes/navbar.php' ?>
+    <?php
+if (isset($_POST["email"])) {
+  echo "<br>";
+  $email = strip_tags($_POST["email"]);
+  $name = strip_tags($_POST["name"]);
+  $message = strip_tags($_POST["message"]);
 
+  $email = filter_var($email, FILTER_SANITIZE_STRING);
+  $name = filter_var($name, FILTER_SANITIZE_STRING);
+  $message = filter_var($message, FILTER_SANITIZE_STRING);
+  $date = filter_var(date("Y/m/d"), FILTER_SANITIZE_STRING);
+
+  $mysqli = retrieveDatabaseConnection();
+
+  $sql = "INSERT INTO WPContact (email, name, message, date) VALUES (?,?,?,?)";
+  $stmt = $mysqli->prepare($sql);
+  $stmt->bind_param("ssss", $email, $name, $message, $date);
+
+  $success = $stmt->execute();
+
+  $mysqli->close();
+}
+
+?>
     <div id="text_header">
       <h2><b>CONTACT-US</b></h2>
     </div>
@@ -82,16 +81,16 @@ if (isset($_POST["email"])) {
           <form class="contact" name="contactForm" onsubmit="return validateContact()" action='contact.php' method='POST'>
             <div class="form-group">
               <label for="email">Email address</label>
-              <input type="email" name='email' class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <input required type="email" name='email' class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" name='name' class="form-control" id="name" placeholder="Name">
+              <input required type="text" name='name' class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea class="form-control" id="message" name='message' rows="3"></textarea>
+              <textarea required class="form-control" id="message" name='message' rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
